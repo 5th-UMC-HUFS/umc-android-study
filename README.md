@@ -31,11 +31,11 @@ android-study/
 │  ├─ week1/
 │  │  ├─ .gitignore
 │  │  ├─ build.gradle (week1 module)
-│  │  ├─ .gitignore
+│  │  ├─ src/
 │  ├─ week2/
 │  │  ├─ .gitignore
 │  │  ├─ build.gradle (week2 module)
-│  │  ├─ .gitignore
+│  │  ├─ src/
 ```
 
 ### 프로젝트 모듈 규칙
