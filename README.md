@@ -10,7 +10,7 @@
 
   **[Github](https://github.com/gomsang) | [Blog](https://blog.gomsang.com)**
 
-- 민디/강민지 ***("폴더이름")***
+- 민디/강민지 ***("mindy")***
 
 - 케이/강나연 ***("폴더이름")***
   
