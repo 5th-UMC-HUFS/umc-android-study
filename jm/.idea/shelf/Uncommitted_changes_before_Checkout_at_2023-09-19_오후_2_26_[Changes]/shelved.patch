@@ -1,0 +1,147 @@
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1695101043330)
++++ b/.idea/gradle.xml	(date 1695101043330)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="GRADLE" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="jbr-17" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1695101043314)
++++ b/.idea/vcs.xml	(date 1695101043314)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1695101043250)
++++ b/.idea/misc.xml	(date 1695101043250)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="ProjectRootManager" version="2" default="true">
++    <output url="file://$PROJECT_DIR$/build/classes" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19__2_21__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19__2_21__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19__2_21__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1695101043084)
++++ b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19__2_21__Changes_.xml	(date 1695101043084)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]" date="1695100905373" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2023-09-19 오후 2:21 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1695100912306)
++++ b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]/shelved.patch	(date 1695100912306)
+@@ -0,0 +1,55 @@
++Index: .idea/misc.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" default=\"true\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n</project>
++===================================================================
++diff --git a/.idea/misc.xml b/.idea/misc.xml
++--- a/.idea/misc.xml	
+++++ b/.idea/misc.xml	
++@@ -1,7 +1,7 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="ExternalStorageConfigurationManager" enabled="true" />
++-  <component name="ProjectRootManager" version="2" default="true">
+++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
++     <output url="file://$PROJECT_DIR$/build/classes" />
++   </component>
++ </project>
++\ No newline at end of file
++Index: .idea/gradle.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n<<<<<<< HEAD\r\n=======\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n>>>>>>> week1\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"jbr-17\" />\r\n<<<<<<< HEAD\r\n=======\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n            <option value=\"$PROJECT_DIR$/week1\" />\r\n          </set>\r\n        </option>\r\n>>>>>>> week1\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
++===================================================================
++diff --git a/.idea/gradle.xml b/.idea/gradle.xml
++--- a/.idea/gradle.xml	
+++++ b/.idea/gradle.xml	
++@@ -1,27 +1,4 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++-<<<<<<< HEAD
++-=======
++   <component name="GradleMigrationSettings" migrationVersion="1" />
++->>>>>>> week1
++-  <component name="GradleSettings">
++-    <option name="linkedExternalProjectsSettings">
++-      <GradleProjectSettings>
++-        <option name="testRunner" value="GRADLE" />
++-        <option name="distributionType" value="DEFAULT_WRAPPED" />
++-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++-        <option name="gradleJvm" value="jbr-17" />
++-<<<<<<< HEAD
++-=======
++-        <option name="modules">
++-          <set>
++-            <option value="$PROJECT_DIR$" />
++-            <option value="$PROJECT_DIR$/app" />
++-            <option value="$PROJECT_DIR$/week1" />
++-          </set>
++-        </option>
++->>>>>>> week1
++-      </GradleProjectSettings>
++-    </option>
++-  </component>
++ </project>
++\ No newline at end of file
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-09-19_오후_2_21_[Changes]1/shelved.patch
+new file mode 100644
