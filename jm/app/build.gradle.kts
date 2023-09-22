@@ -7,6 +7,10 @@ android {
     namespace = "com.example.jm"
     compileSdk = 33
 
+    viewBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.jm"
         minSdk = 24
