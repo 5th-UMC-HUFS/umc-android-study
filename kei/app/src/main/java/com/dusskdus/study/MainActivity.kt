@@ -2,6 +2,8 @@ package com.dusskdus.study
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dusskdus.study.LockerFragment
+import com.dusskdus.study.LookFragment
 import com.dusskdus.study.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
