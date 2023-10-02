@@ -4,15 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.UMC.study'
+    namespace 'com.umc.week1'
     compileSdk 33
 
-    viewBinding {
-        enabled true
-    }
-
     defaultConfig {
-        applicationId "com.UMC.study"
+        applicationId "com.umc.week1"
         minSdk 24
         targetSdk 33
         versionCode 1
