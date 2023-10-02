@@ -8,8 +8,6 @@
 
 - 로크/김경록 ***("rokeu")***
 
-  **[Github](https://github.com/gomsang) | [Blog](https://blog.gomsang.com)**
-
 - 민디/강민지 ***("mindy")***
 
 - 케이/강나연 ***("kei")***
