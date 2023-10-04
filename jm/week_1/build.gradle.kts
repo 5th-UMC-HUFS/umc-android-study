@@ -4,15 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.jm"
+    namespace = "com.example.week_1"
     compileSdk = 33
 
-    viewBinding {
-        enable = true
-    }
-
     defaultConfig {
-        applicationId = "com.example.jm"
+        applicationId = "com.example.week_1"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -49,4 +45,3 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
-
