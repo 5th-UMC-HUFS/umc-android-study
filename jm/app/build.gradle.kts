@@ -9,7 +9,7 @@ android {
 
     viewBinding {
         enable = true
-    }
+    }//뷰 바인딩 추가 > Sync Now 꼭 클릭
 
     defaultConfig {
         applicationId = "com.example.jm"
