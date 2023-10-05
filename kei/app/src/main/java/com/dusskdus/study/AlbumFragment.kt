@@ -20,9 +20,7 @@ class AlbumFragment : Fragment() {
         binding = FragmentAlbumBinding.inflate(inflater,container,false)
 
         binding.albumBackIv.setOnClickListener {
-            (context as MainActivity).supportFragmentManager.beginTransaction()
-                    .replace(R.id.main_frm, HomeFragment())
-                    .commitAllowingStateLoss()
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
         }
 
         binding.songLalacLayout.setOnClickListener {

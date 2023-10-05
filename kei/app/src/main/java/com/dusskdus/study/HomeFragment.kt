@@ -18,6 +18,10 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        binding.todayReleaseAlbum1ImgIv.setOnClickListener{
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm,AlbumFragment()).commitAllowingStateLoss() //main activity의 레이아웃을 어디서 변경하는지 기록
+
+        }
         return binding.root
     }
 }
