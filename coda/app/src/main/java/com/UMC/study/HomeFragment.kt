@@ -18,6 +18,10 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        binding.homeTodaySongTitle1Iv.setOnClickListener {
+
+        }
+
         return binding.root
     }
 }
