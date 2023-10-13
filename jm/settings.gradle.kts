@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "jm"
 include(":app")
+include(":week_1")

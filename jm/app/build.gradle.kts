@@ -7,6 +7,10 @@ android {
     namespace = "com.example.jm"
     compileSdk = 33
 
+    viewBinding {
+        enable = true
+    }//뷰 바인딩 추가 > Sync Now 꼭 클릭
+
     defaultConfig {
         applicationId = "com.example.jm"
         minSdk = 24
@@ -45,3 +49,4 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
