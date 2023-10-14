@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -50,7 +51,7 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toBottomOf="@+id/btn_down_ib"
         app:layout_constraintStart_toStartOf="@id/btn_down_ib"/>
-    
+
     <TextView
         android:id="@+id/player_music_title_tv"
         android:layout_width="wrap_content"
@@ -74,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/player_music_title_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-    
+
     <ImageButton
         android:id="@+id/player_more_right_ib"
         android:layout_width="20dp"
@@ -85,7 +86,7 @@
         android:scaleType="fitXY"
         app:layout_constraintStart_toEndOf="@+id/player_singer_name_tv"
         app:layout_constraintTop_toBottomOf="@+id/player_music_title_tv"/>
-    
+
     <ImageView
         android:id="@+id/player_album_iv"
         android:layout_width="280dp"
@@ -100,7 +101,7 @@
         android:id="@+id/player_music_lyrics1_01_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="나라는 꽃가루에"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,6 +116,170 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player_music_lyrics1_01_tv"/>
 
+    <LinearLayout
+        android:id="@+id/like_icon_ilst_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/player_music_lyrics1_02_tv"
+        app:layout_constraintStart_toStartOf="@id/player_music_lyrics1_02_tv">
+
+
+
+        <ImageButton
+            android:id="@+id/ic_my_like_ib"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_my_like_off"
+            android:background="@color/white"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/ic_my_unlike_ib"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/btn_player_unlike_off"
+            android:background="@color/white"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/player_music_bar_v"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/gray_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/like_icon_ilst_ll" />
+
+
+    <TextView
+        android:id="@+id/song_start_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:10"
+        android:textColor="@color/select_color"
+        app:layout_constraintStart_toStartOf="@+id/player_music_bar_v"
+        app:layout_constraintTop_toBottomOf="@+id/player_music_bar_v" />
+
+
+    <TextView
+        android:id="@+id/song_end_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00"
+        android:textColor="@color/gray_color"
+        app:layout_constraintEnd_toEndOf="@+id/player_music_bar_v"
+        app:layout_constraintTop_toBottomOf="@+id/player_music_bar_v" />
+
+
+    <LinearLayout
+        android:id="@+id/player_icon_list_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_music_bar_v">
+
+        <ImageButton
+            android:id="@+id/player_previous_ib"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_miniplayer_previous"/>
+
+        <ImageButton
+            android:id="@+id/player_play_ib"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/btn_miniplayer_play"
+            android:background="@color/white"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/player_pause_ib"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/btn_miniplay_pause"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/player_next_ib"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/btn_miniplayer_next"
+            android:background="@color/white"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/player_repeat_ib"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/nugu_btn_repeat_inactive"
+        app:layout_constraintTop_toTopOf="@+id/player_icon_list_ll"
+        app:layout_constraintBottom_toBottomOf="@+id/player_icon_list_ll"
+        app:layout_constraintEnd_toStartOf="@+id/player_icon_list_ll"/>
+
+    <ImageView
+        android:id="@+id/player_random_ib"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/nugu_btn_random_inactive"
+        app:layout_constraintTop_toTopOf="@+id/player_icon_list_ll"
+        app:layout_constraintBottom_toBottomOf="@+id/player_icon_list_ll"
+        app:layout_constraintStart_toEndOf="@+id/player_icon_list_ll"/>
+    
+    <ImageButton
+        android:id="@+id/player_insta_ib"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/btn_actionbar_instagram"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/player_related_ib"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="110dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_player_related"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/player_insta_ib"
+        app:layout_constraintTop_toBottomOf="@id/player_icon_list_ll"/>
+
+    <ImageButton
+        android:id="@+id/player_list_ib"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/btn_miniplayer_go_list"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
