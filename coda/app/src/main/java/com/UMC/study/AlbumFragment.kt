@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.UMC.study.databinding.FragmentAlbumBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,6 +36,18 @@ class AlbumFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         binding = FragmentAlbumBinding.inflate(inflater, container, false)
+
+        binding.albumBackIv.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
+        }
+
+        // 토스트 메세지
+        binding.songLalacLayout.setOnClickListener {
+            Toast.makeText(activity, "LIIAC", Toast.LENGTH_SHORT).show()
+        }
+
+        val singer = arguments?.getInt("singer")
+
         return binding.root
     }
 

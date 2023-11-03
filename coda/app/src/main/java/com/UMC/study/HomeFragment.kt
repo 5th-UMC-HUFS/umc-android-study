@@ -19,7 +19,17 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         binding.homeTodaySongTitle1Iv.setOnClickListener {
+            var AlbumFragment = AlbumFragment()
+            val bundle = Bundle()
+            bundle.putString("title", binding.homeSongTitle1Tv.text.toString())
+            bundle.putString("singer", binding.homeSongSing1Tv.text.toString())
 
+            AlbumFragment.arguments = bundle
+
+            activity?.supportFragmentManager!!.beginTransaction()
+                .replace(R.id.main_frm, AlbumFragment)
+                .commit()
+            // (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
         }
 
         return binding.root
