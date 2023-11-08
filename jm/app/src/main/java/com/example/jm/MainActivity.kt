@@ -3,6 +3,7 @@ package com.example.jm
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.jm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,10 +15,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val song = Song(binding.mainMiniplayerSong.text.toString(), binding.mainMiniplayerSinger.text.toString())
+
         binding.mainPlayerCl.setOnClickListener {
-            startActivity(Intent(this, SongActivity::class.java))
+            //startActivity(Intent(this, SongActivity::class.java)) 밑에 intent와 동일(intent라는 택배 상자에 담음)
+            val intent = Intent(this,SongActivity::class.java)
+            intent.putExtra("title",song.title)
+            intent.putExtra("singer", song.singer)
+            startActivity(intent)
         }
         initBottomNavigation()
+
+
 
     }
 

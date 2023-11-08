@@ -23,7 +23,13 @@ class SongActivity : AppCompatActivity() { // 안드로이드에서 액티비티
         binding.playerPauseIb.setOnClickListener{
             setPlayerStatus(true)
         }
+        if (intent.hasExtra("title") && intent.hasExtra("singer")){
+            binding.playerMusicTitleTv.text=intent.getStringExtra("title")
+            binding.playerSingerNameTv.text=intent.getStringExtra("singer")
+        }
+
     }
+
 
     fun setPlayerStatus(isPlaying : Boolean){
         if (isPlaying){
